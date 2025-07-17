@@ -1,0 +1,1070 @@
+/* Fonts Import */
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Cookie&family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300..700&family=Unbounded:wght@200..900&display=swap');
+
+/* General Styling */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #eaf3ff 0%, #90bfee 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 10px;
+  border: #000 1px solid;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #90bfee;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
+*{
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: #000;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* The Main Top Section */
+
+section#spotlight{
+  background: linear-gradient(to bottom, #eaf3ff 0%, #90bfee 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  position: relative;
+  height: 180vh;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0;
+  border-radius: 30px 30px 0px 0px;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: top;
+  }
+  50% {
+    background-position: bottom;
+  }
+  100% {
+    background-position: top;
+  }
+}
+
+/* The Navbar */
+
+nav.navbar{
+  width: 100%;
+  height: 12vh;
+  background-color: rgba(255, 255, 255, 0.4); /* translucent white */
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 0px 0px 30px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+} 
+
+nav.navbar div.logo{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+div#loading-page h1{
+  position: relative;
+  right: 30px;
+}
+
+div#loading-page img.svg{
+  width: 150px;
+  position: relative;
+  top: 63px;
+}
+
+img.svg{
+  width: 70px;
+  position: relative;
+  left: 50px;
+  top: 10px;
+}
+
+nav.navbar nav.links{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.navbar nav.links ul{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav.navbar div.right{
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.navbar div.right a.button{
+  box-sizing: border-box;
+  padding: 10px 23px;
+  background: transparent;
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 20px;
+  transition: all .3s ease-in;
+  border: 0.5px solid rgb(107, 107, 107);
+}
+
+nav.navbar div.right a.button:hover{
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 6px 19px;
+}
+
+/* The Hero Section */
+
+section#hero{
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything horizontally */
+  box-sizing: border-box;
+  padding-top: 50px;
+  justify-content: flex-start; 
+}
+
+section#hero p{
+  font-size: 20px;
+}
+
+section#hero h1{
+  font-size: 100px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 100px;
+  position: relative;
+  bottom: 50px;
+}
+
+section#hero h1 span{
+  font-family: "Unbounded", sans-serif;
+  font-size: 90px;
+  background: linear-gradient(90deg, #ff48c8, #216ad0, #9e9aff, #2b7d5b);
+  background-size: 300% 300%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gradientShifts 5s ease infinite;
+}
+
+@keyframes gradientShifts {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+section#hero p.hello{
+  font-size: 20px;
+  position: relative;
+  bottom: 120px;
+}
+
+section#hero a.button{
+  box-sizing: border-box;
+  padding: 17px 73px;
+  background: linear-gradient(to bottom, #006eff 0%, #43a1ff 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  transition: all .3s ease-in;
+  color: #fff;
+  position: relative;
+  bottom: 100px;
+}
+
+section#hero a.button:hover{
+  box-shadow: rgba(41, 41, 41, 0.2) 0px 10px 19px;
+}
+
+@media (max-width: 768px) {
+  #hero {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero p {
+    font-size: 1rem;
+  }
+}
+
+/* The About Section */
+
+section#about{
+  width: 90%;
+  position: relative;
+  left: 80px;
+  bottom: 60px;
+  height: 60.63%;
+  background: #90a4fc;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section#about div.top{
+  width: 100%;
+  height: 23%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 80px;
+}
+
+section#about *{
+  color: #101585;
+}
+
+section#about div.left{
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section#about div.left h1{
+  font-size: 30px;
+  font-weight: 300;
+}
+
+section#about div.right{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section#about div.right a.button{
+  box-sizing: border-box;
+  padding: 10px 18px;
+  background: linear-gradient(to bottom, #101585 0%, #434679 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  transition: all .3s ease-in;
+  color: #fff;
+  font-size: 13px;
+}
+
+section#about a.button:hover{
+  box-shadow: rgba(41, 41, 41, 0.2) 0px 10px 19px;
+}
+
+section#about div.right p{
+  font-size: 13px;
+  position: relative;
+  bottom: 10px;
+}
+
+section#about div.bottom{
+  width: 100%;
+  height: 77%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 150px;
+}
+
+section#about img{
+  width: 620px;
+  position: inherit;
+}
+
+.hero-video {
+  width: 100%;
+  max-width: 200px; /* Or any size you want */
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+  transform: rotate(-10deg); /* Try adjusting between -5deg to 5deg */
+  position: relative;
+  left: 50px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-video:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.55);
+}
+
+.hero-videoo{
+  width: 100%;
+  max-width: 200px; /* Or any size you want */
+  display: block;
+  border-radius: 16px;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.45);
+  transform: rotate(10deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hero-videoo:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.55);
+}
+
+div.vid{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* My Skills Section */
+
+section#skills{
+  width: 100%;
+  height: 60vh;
+  background: rgba(2,64,81, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+section#skills div.top{
+  width: 100%;
+  height: 29%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 80px;
+}
+
+section#skills div.left{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section#skills div.left h1{
+  font-size: 35px;
+  font-weight: 300;
+  color: #FDF4A1;
+}
+
+section#skills div.right{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section#skills div.right a.button{
+  box-sizing: border-box;
+  padding: 12px 23px;
+  background: #FDF4A1;
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  transition: all .2s ease-in;
+  color: rgba(2,64,81, 1);
+}
+
+section#skills a.button:hover{
+  box-shadow: #000000 0px 3px 14px;
+}
+
+section#skills div.right p{
+  position: relative;
+  bottom: 10px;
+  color: #FDF4A1;
+}
+
+.skills-title {
+  position: relative;
+  display: inline-block;
+  color: #FDF4A1; /* adjust as needed */
+}
+
+.skills-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 4px;
+  background: #FDF4A1;
+  box-shadow: 0 0 10px #FDF4A1;
+  animation: pulse-underline 3s infinite ease-in-out;
+  border-radius: 2px;
+}
+
+@keyframes pulse-underline {
+  0% {
+    transform: scaleX(1);
+    opacity: 1;
+    box-shadow: 0 0 10px #FDF4A1;
+  }
+  50% {
+    transform: scaleX(1.1);
+    opacity: 0.6;
+    box-shadow: 0 0 15px #fff27a;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+    box-shadow: 0 0 10px #ffeb39;
+  }
+}
+
+section#skills div.container{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 80px;
+}
+
+.card-1 { background-color: #f5fafc; }
+.card-2 { background-color: #0097a7; }
+.card-3 { background-color: #ebb257; }
+.card-4 { background-color: #132933; }
+
+.card {
+  width: 240px;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: 
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    filter 0.4s ease;
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    filter 0.4s ease,
+    height 0.4s ease;
+  transform-style: preserve-3d;
+  will-change: transform, box-shadow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* 👆 This makes all cards gently animate on hover */
+
+.card:hover {
+  transform: perspective(800px) translateY(-10px) rotateX(8deg);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  filter: none;
+}
+
+/* ✨ Blur the other cards inside container */
+.container:hover .card {
+  filter: blur(2px);
+}
+
+/* ✨ Keep the hovered card sharp */
+.container .card:hover {
+  filter: none;
+}
+
+.card *{
+  color: #102831;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.05); /* optional for subtle depth */
+}
+
+.card-4 *{
+  color: #f5fafc; /* Overrides the common dark font */
+}
+
+.card-1 img{
+  position: inherit;
+  width: 23px;
+}
+
+.card-2 img{
+  position: inherit;
+  width: 23px;
+}
+
+.card-3 img{
+  position: inherit;
+  width: 23px;
+}
+
+.card-4 img{
+  position: inherit;
+  width: 23px;
+}
+
+/* Getting straight to the point */
+
+section#bye{
+  width: 100%;
+  height: 35vh;
+  background: #fca311;
+  position: relative;
+}
+
+section#bye *{
+  color: #3b1f47;
+}
+
+section#bye h1{
+  font-size: 36px;
+  font-weight: normal;
+}
+
+section#bye a.button{
+  box-sizing: border-box;
+  padding: 15px 50px;
+  background: #3b1f47;
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  transition: all .3s ease-in;
+  color: #ffffff;
+}
+
+section#bye a.button:hover{
+  box-shadow: rgba(41, 41, 41, 0.2) 0px 10px 19px;
+}
+
+section#bye div.top{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 50px 0px 80px;
+}
+
+section#bye div.left{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section#bye div.right{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* The Footer */
+
+footer{
+  width: 100%;
+  height: 8vh;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 50px 0px 80px;
+}
+
+footer *{
+  color: #2e2e2e;
+  font-size: 15px;
+}
+
+footer a{
+  color: #006eff;
+  transition: all .3s ease-in-out;
+}
+
+footer a:hover{
+  text-decoration: underline;
+}
+
+.spec{
+  position: absolute;
+  z-index: 60;
+  top: 200px;
+  left: 100px;
+  width: 100px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  transform: rotate(-10deg); /* Try adjusting between -5deg to 5deg */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.spec:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.55);
+}
+
+.speec{
+  position: absolute;
+  z-index: 60;
+  top: 500px;
+  left: 100px;
+  width: 100px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 20px;
+  transform: rotate(10deg); /* Try adjusting between -5deg to 5deg */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.speec:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.55);
+}
+
+.speed{
+  position: absolute;
+  z-index: 60;
+  top: 200px;
+  left: 1300px;
+  width: 100px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
+  transform: rotate(10deg); /* Try adjusting between -5deg to 5deg */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.speed:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.55);
+}
+
+.sped{
+  position: absolute;
+  z-index: 60;
+  top: 500px;
+  left: 1300px;
+  width: 100px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(10px); /* frosted glass effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border-radius: 20px;
+  transform: rotate(-10deg); /* Try adjusting between -5deg to 5deg */
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.sped:hover {
+  transform: translateY(-10px) rotate(-2deg);
+  box-shadow: 0 40px 70px rgba(0, 0, 0, 0.55);
+}
+
+section#spotlight section#hero p span{
+  color: #000;
+}
+
+#loading-page {
+  background: #fff;
+  color: #000;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 1s ease-out;
+  z-index: 2;
+  position: relative;
+}
+
+#curtain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 1;
+  transition: transform 0.5s ease;
+  transform: translateY(0);
+}
+
+.slide-up {
+  transform: translateY(-100%);
+}
+
+div#loading-page h1 {
+  font-size: 5.5em;
+  font-weight: normal;
+  margin: 0;
+}
+
+div#loading-page h1 span{
+  color: #000;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease forwards;
+}
+
+.delay {
+  animation-delay: .3s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@media screen and (max-width: 600px) {
+  h1 { font-size: 2em; }
+  p { font-size: 1em; }
+}
+
+
+/* My Projects Section : No Content */
+
+section#projects{
+  width: 100%;
+  height: 253vh;
+  background: #90a4fc;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+section#projects div.top{
+  width: 100%;
+  height: 14.03%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0px 80px;
+}
+
+section#projects div.left{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+section#projects div.left h1{
+  font-size: 35px;
+  font-weight: 300;
+}
+
+section#projects div.right{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 80px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+section#projects div.right a.button{
+  box-sizing: border-box;
+  padding: 12px 23px;
+  background: linear-gradient(to bottom, #101585 0%, #434679 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  transition: all .3s ease-in;
+  color: #fff;
+}
+
+section#projects a.button:hover{
+  box-shadow: rgba(41, 41, 41, 0.2) 0px 10px 19px;
+}
+
+section#projects div.right p{
+  position: relative;
+  bottom: 10px;
+}
+
+section#projects div.proj{
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 0px 80px;
+}
+
+section#projects div.proj div.item-one, div.item-two, div.item-three{
+  width: 100%;
+  height: 33.3%;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+section#projects div.proj div.item-one div.item, div.item-two div.item, div.item-three div.item{
+  width: 60%;
+  height: 75%;
+  border-radius: 16px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  border-radius: 20px;
+  transition: .5s all ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+}
+
+div.item-one div.item{
+  background: #ac88ff;
+}
+
+div.item-two div.item{
+  background: #fbeff5	;
+}
+
+div.item-three div.item{
+  background: #3e3e50;
+}
+
+div.proj div.text{
+  width: 30%;
+  height: 70%;
+  border-left: 1px solid #919191;
+  position: relative;
+  top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 70px 0px;
+}
+
+div.proj video{
+  transition: all .3s ease-in-out;
+}
+
+section#projects div.proj div.item-one div.item video{
+  width: 795px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+section#projects div.proj div.item-two div.item video{
+  width: 795px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+section#projects div.proj div.item-three div.item video{
+  width: 795px;
+  height: 400px;
+  border-radius: 30px;
+}
+
+div.text svg{
+  width: 300px;
+  cursor: pointer;
+}
+
+div.text h1{
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: -2px;
+  cursor: pointer;
+}
+
+div.text img{
+  width: 500px;
+  position: relative;
+  left: 100px;
+  cursor: pointer;
+}
+
+div.text div.buttons{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+div.buttons a.button{
+  box-sizing: border-box;
+  padding: 12px 50px;
+  background: linear-gradient(to bottom, #101585 0%, #434679 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  transition: all .3s ease-in;
+  color: #fff !important;
+  font-size: 13px;
+}
+
+div.buttons a.button:hover{
+  box-shadow: rgba(41, 41, 41, 0.2) 0px 10px 19px;
+}
+
+.video-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.video-wrapper video {
+  transition: opacity 0.3s ease;
+}
+
+.video-wrapper:hover video {
+  opacity: 0.2;
+}
+
+.live-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);box-sizing: border-box;
+  padding: 14px 50px;
+  background: linear-gradient(to bottom, #101585 0%, #434679 100%);
+  background-size: 200% 200%;
+  animation: gradientShift 20s ease infinite;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  border-radius: 30px;
+  color: #fff !important;
+  font-size: 13px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.live-btn:hover{
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 15px 24px;
+}
+
+.video-wrapper:hover .live-btn {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- About Me Page ----------------*/
+
+
